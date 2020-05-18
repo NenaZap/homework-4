@@ -1,0 +1,43 @@
+#excercise one
+def triangle_asnumber:
+    number = int(num)
+    value = 0
+    for triangle in range(number+1):
+        value = value + triangle
+    return value
+#excercise two
+def stripedrectangle_(character,width,height):
+    for stripe in range(height):
+        print(width*character)
+#excercise three
+def Makeparallelogram_(height, width, char):
+    number = 0
+    spaces = height - 1
+    while number <= height:
+        if number != width:
+            print(' '*spaces+char*width)
+        number = number + 1
+        spaces = spaces - 1
+#excercise four
+def double_digets(number):
+   number_string = str(int(number))
+   if len(number_string)<2:
+      return('0'+number_string)
+   else:
+      return(number_string)        
+def clock ():
+   import time
+   second = 10 
+   minute = 600 
+   hour = 36000
+   day = 36000*24
+   total_mseconds = 0
+   current_msecond = 0
+   current_second = 0
+   current_minute = 0
+   current_hour = 0
+   current_day = 0
+   while True:
+      print_string=doub_dig(current_day)+':'+doub_dig(current_hour)+':'+doub_dig(current_minute)+':'+doub_dig(current_second)+'.'+str(current_msecond)
+      print(print_string)
+      
