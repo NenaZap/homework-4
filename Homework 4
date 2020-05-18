@@ -28,7 +28,7 @@ def double_digets(number):
 def clock ():
    import time
    second = 10 
-   minute = 600 
+   minute = 60 
    hour = 36000
    day = 36000*24
    total_mseconds = 0
@@ -38,6 +38,6 @@ def clock ():
    current_hour = 0
    current_day = 0
    while True:
-      print_string=doub_dig(current_day)+':'+doub_dig(current_hour)+':'+doub_dig(current_minute)+':'+doub_dig(current_second)+'.'+str(current_msecond)
+      print_string=doub_dig(current_day)+doub_dig(current_hour)+doub_dig(current_minute)+doub_dig(current_second)+str(current_msecond)
       print(print_string)
       
